@@ -275,10 +275,11 @@ li {
     }
 
     .header_menu {
-        padding-bottom: 80px
+        height: 180px;
     }
 
     nav {
         padding: 0;
+        height: 100%;
     }
 }
