@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+@font-face { 
+    font-family: "GilroyBold";
+    src: url("../fonts/GilroyBold.eot");
+    src: url("../fonts/GilroyBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GilroyBold.ttf") format("woff"),
+    url("../fonts/GilroyBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("../fonts/GilroyMedium.eot");
+    src: url("../fonts/GilroyMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GilroyMedium.woff") format("woff"),
+    url("../fonts/GilroyMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+html {
+    color: #fff;
+    background-color: #555;
+    scroll-behavior: smooth;
+    font-family: "GilroyBold";
+}
+
+section {
+    padding-top: 80px;
+}
+
+.container {
+
+}
+
+header {
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #F6F6F6;
+    position: fixed;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+}
+
+nav {
+    padding: 28.8px 0;
+}
+
+.menu {
+    margin: 0 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu_item {
+    font-size: 18px;
+    text-decoration: none;
+    color: #aaa;
+    transition: 0.5s;
+}
+
+.menu_item:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Home {
+    margin: 0 10%;
+    width: 80%;
+}
+
+.Home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 180px;
+    justify-content: space-between;
+}
+
+.Home-title {
+    font-size: 47px;
+}
+
+.Home-subtitle {
+    font-size: 18px;
+    font-family: "GilroyMedium";
+}
+
+li {
+    list-style: none;
+}
+
+.my-image {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.About-me {
+    background-color: #444;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.About-me-title {
+    font-size: 34px;
+}
+
+.About-me-subtitle {
+    padding-top: 40px;
+    font-size: 18px;
+    font-family: "GilroyMedium";
+}
+
+.Skills {
+    border-top: solid 80px #444;
+    width: 100%;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.Skills-title {
+    font-size: 34px;
+}
+
+.Skills-subtitle {
+    padding-top: 40px;
+    font-size: 18px;
+    font-family: "GilroyMedium";
+}
+
+.programs {
+    font-family: "GilroyBold";
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.program {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.program-text {
+    color: #ccc;
+}
+
+.Portfolio {
+    background-color: #444;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.Portfolio-title {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    width: 80%;
+    margin: 10px 10%;
+}
+
+.Contacts {
+    text-align: center;
+    padding: 120px 0;
+}
+
+.Contacts-title {
+    font-size: 34px;
+}
+
+.Contacts-subtitle {
+    padding-top: 40px;
+    font-size: 18px;
+    font-family: "GilroyMedium";
+}
+
+.btn {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.button {
+    margin: 40px auto;
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 25px;
+    border: solid 2px white;
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger .line {
+    width: 24px;
+    height: 3px;
+    background-color: #ccc;
+    display: block;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg):
+}
+
+#hamburger-1.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg):
+}
+
+@media screen and (max-width: 992px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 23.5px;
+        right: 30px;
+    }
+
+    .menu_item {
+        font-size: 48px;
+    }
+
+    .menu_show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .header_menu {
+        height: 100%;
+    }
+
+    nav {
+        padding: 0;
+        height: 100%;
+    }
+}
